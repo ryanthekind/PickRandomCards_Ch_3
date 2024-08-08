@@ -13,7 +13,6 @@ if (int.TryParse(line, out int numberOfCards))
 {
     // This block is exectued if line COULD be converted to an int
     // value that's stored in a new variable called numberOfCards
-    Console.WriteLine(line);
     Console.WriteLine(numberOfCards);
 
 }
@@ -23,10 +22,12 @@ else
 
 }
 
-/*
+// Use a String[] variable to save the results
+List<string> cards = new List<string>();
+
 
 foreach (string card in CardPicker.PickSomeCards(numberOfCards))
 {
-
+    Console.WriteLine($"Card {card}");
 }
-*/
+
